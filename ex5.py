@@ -16,3 +16,5 @@ print "His teeth are usually %r depending on the coffee." % teeth
 # this line is tricky, try to get it exactly right
 print "If I add %r, %r, and %r I get %r." % (
 	age, height, weight, age + height + weight)
+	
+# All formatting characters: %d, %i, %o, %u, %x, %X, %e, %E, %f, %F, %g, %G, %c, %r, %s
