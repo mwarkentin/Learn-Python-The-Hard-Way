@@ -1,6 +1,6 @@
 from sys import argv
 
-script, user_name = argv
+script, user_name, fave_color = argv
 prompt = '8====D~~~ '
 
 print "Hi %s, I'm the %s script." % (user_name, script)
@@ -18,4 +18,5 @@ print """
 Alright, so you said %r about liking me.
 You live in %r. Not sure where that is.
 And you have a %r computer. Nice.
-""" % (likes, lives, computer)
+Your favorite color is %r. Mine too!
+""" % (likes, lives, computer, fave_color)
