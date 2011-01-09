@@ -13,6 +13,8 @@ print "Here's your file %r:" % filename
 # print the contexts of the txt file object
 print txt.read()
 
+txt.close()
+
 # print a string
 print "I'll also ask you to type it again:"
 
@@ -24,3 +26,5 @@ txt_again = open(file_again)
 
 # print the contents of the txt_again file object
 print txt_again.readlines()
+
+txt_again.close()
