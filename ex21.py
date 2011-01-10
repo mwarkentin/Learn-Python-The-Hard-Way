@@ -30,6 +30,6 @@ print "Here is a puzzle."
 
 # age + height - weight * (iq / 2)
 # 35  + 74     - 180    * (50 / 2)
-what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
+what = add(age, subtract(height, multiply(weight, divide(iq, 4))))
 
 print "That becomes: ", what, "Can you do it by hand?"
