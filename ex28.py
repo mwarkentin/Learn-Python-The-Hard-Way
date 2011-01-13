@@ -18,3 +18,6 @@
 #18. True
 #19. False
 #20. False
+
+# List of equality operators: <, >, ==, !=, <=, >=, is, is not
+# less than, greater than, equal to, not equal to, less than or equal to, greater than or equal to, is, is not
