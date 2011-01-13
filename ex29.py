@@ -1,6 +1,6 @@
 people = 20
-cats = 30
-dogs = 15
+cats = 15
+dogs = 30
 
 
 if people < cats:
@@ -27,3 +27,9 @@ if people <= dogs:
 
 if people == dogs:
     print "People are dogs."
+    
+# Extra credit
+# 1. The if statement executes the code under it if the expression is True
+# 2. The code under the if needs to be indented 4 spaces so that Python knows what code is part of the if block
+# 3. If the code wasn't indented, it would be executed, regardless of the Truthiness of the if statement
+# 5. IF we change the initial variables, we get different print statements.
