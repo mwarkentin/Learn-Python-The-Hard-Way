@@ -6,12 +6,13 @@ def gold_room():
     """Describe gold room and take user input."""
     print "This room is full of gold. How much do you take?"
     
-    next = raw_input(prompt)
-    
-    if "0" in next or "1" in next:
-        how_much = int(next)
-    else:
-        dead("Man, learn to type a number.")
+    while True:
+        try:
+            next = raw_input(prompt)
+            how_much = int(next)
+            break
+        except ValueError:
+            print "That's not a number... try again!"
         
     if how_much < 50:
         print "Nice, you're not greedy, you win!"
