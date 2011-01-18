@@ -1,10 +1,12 @@
 from sys import exit
 
+prompt = "==> "
+
 def gold_room():
     """Describe gold room and take user input."""
     print "This room is full of gold. How much do you take?"
     
-    next = raw_input("> ")
+    next = raw_input(prompt)
     
     if "0" in next or "1" in next:
         how_much = int(next)
@@ -27,7 +29,7 @@ def bear_room():
     bear_moved = False
     
     while True:
-        next = raw_input("> ")
+        next = raw_input(prompt)
         
         if next == "take honey":
             dead("The bear looks at you and then pimp slaps your face off.")
@@ -47,7 +49,7 @@ def cthulu_room():
     print "He, it, whatever stares at you and you go insane."
     print "Do you flee for your life or eat your head?"
     
-    next = raw_input("> ")
+    next = raw_input(prompt)
     
     if "flee" in next:
         start()
@@ -68,7 +70,7 @@ def start():
     print "There is a door to your right and left."
     print "Which one do you take?"
     
-    next = raw_input("> ")
+    next = raw_input(prompt)
     
     if next == "left":
         bear_room()
