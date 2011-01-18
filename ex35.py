@@ -1,9 +1,11 @@
 from sys import exit
 
 def gold_room():
+    """Describe gold room and take user input."""
     print "This room is full of gold. How much do you take?"
     
     next = raw_input("> ")
+    
     if "0" in next or "1" in next:
         how_much = int(next)
     else:
@@ -17,6 +19,7 @@ def gold_room():
 
 
 def bear_room():
+    """Describe bear room and take user input."""
     print "There is a bear here."
     print "The bear has a bunch of honey."
     print "The fat bear is in front of another door."
@@ -39,6 +42,7 @@ def bear_room():
             print "I got no idea what that means."
 
 def cthulu_room():
+    """Describe Cthulu room and take user input."""
     print "Here you see the great evil Cthulu."
     print "He, it, whatever stares at you and you go insane."
     print "Do you flee for your life or eat your head?"
@@ -54,10 +58,12 @@ def cthulu_room():
         
 
 def dead(why):
+    """Print out death message and exit the program."""
     print why, "Good job!"
     exit(0)
 
 def start():
+    """Describe game start and take user input."""
     print "You are in a dark room."
     print "There is a door to your right and left."
     print "Which one do you take?"
